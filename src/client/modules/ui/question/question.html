@@ -1,4 +1,4 @@
-<template>
+<template if:true={IsChoicesQuestion}>
     <div class="question-label">{question.label}</div>
     <div class="answers">
         <div class="answer">
@@ -26,4 +26,7 @@
             </button>
         </div>
     </div>
+</template>
+<template if:true={IsFreeTextQuestion}>
+    <div class="question-label">{question.label}</div>
 </template>

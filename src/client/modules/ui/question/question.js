@@ -23,4 +23,21 @@ export default class Question extends LightningElement {
         });
         this.dispatchEvent(answerEvent);
     }
+    
+    IsCoicesQuestion(){
+        if (question.RecordType == 'Choices'){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    
+    IsFreeTextQuestion(){
+        if (question.RecordType == 'Free_Text'){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

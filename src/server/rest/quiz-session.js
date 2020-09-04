@@ -152,7 +152,8 @@ module.exports = class QuizSessionRestResource {
                         answerA: questionRecord[`${ns}Answer_A__c`],
                         answerB: questionRecord[`${ns}Answer_B__c`],
                         answerC: questionRecord[`${ns}Answer_C__c`],
-                        answerD: questionRecord[`${ns}Answer_D__c`]
+                        answerD: questionRecord[`${ns}Answer_D__c`],
+                        RecortType: questionRecord[`${ns}Recordtype.DeveloperName`]
                     };
                     resolve(question);
                 }
