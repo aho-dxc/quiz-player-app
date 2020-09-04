@@ -134,7 +134,8 @@ module.exports = class QuizSessionRestResource {
             ${ns}Current_Question__r.${ns}Answer_A__c, 
             ${ns}Current_Question__r.${ns}Answer_B__c, 
             ${ns}Current_Question__r.${ns}Answer_C__c, 
-            ${ns}Current_Question__r.${ns}Answer_D__c 
+            ${ns}Current_Question__r.${ns}Answer_D__c,
+            ${ns}Current_Question__r.${ns}RecordType.DeveloperName
             FROM ${ns}Quiz_Session__c`;
             this.sfdc.query(soql, (error, result) => {
                 if (error) {
