@@ -23,7 +23,7 @@ export default class Question extends LightningElement {
         });
         this.dispatchEvent(answerEvent);
     }
-    
+    /*
     IsCoicesQuestion(){
         if (question.RecordType == 'Choices'){
             return true;
@@ -39,5 +39,5 @@ export default class Question extends LightningElement {
         } else {
             return false;
         }
-    }
+    }*/
 }
